@@ -1,4 +1,4 @@
-Learn Shell from source
+Learn Shell from Source
 =======================
 
 The Saga of Code is a series of experiments for programmers
