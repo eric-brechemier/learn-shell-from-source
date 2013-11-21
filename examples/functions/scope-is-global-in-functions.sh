@@ -1,9 +1,9 @@
 cat <<- END
-	**************************************************************
-	This script illustrates that there is no variable scoping
-	in POSIX shell scripts: all variables are set in global scope,
-	variables keep their value when leaving a function.
-	**************************************************************
+	***************************************************************
+	This script illustrates that variables in functions are global,
+	except positional parameters and parameters set just before the
+	function invokation on the same line.
+	***************************************************************
 END
 
 level1()
