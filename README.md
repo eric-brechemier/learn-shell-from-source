@@ -48,6 +48,18 @@ aspects of the language and uncover finer details step by step:
 * [2.9 Shell Commands]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_09)
 
+* [break - exit from for, while, or until loop]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_15)
+
+* [continue - continue for, while, or until loop]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_17)
+
+* [return - return from a function or dot script]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_24)
+
+* [exit - cause the shell to exit]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_21)
+
 * [2.13. Pattern Matching Notation]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_13)
 
