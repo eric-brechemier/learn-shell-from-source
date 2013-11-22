@@ -48,7 +48,7 @@ to remove all untracked files and repositories:
 
 ## RECOMMENDED READING ORDER ##
 
-The specification is intended for implementers rather than users of
+The POSIX specification is intended for implementers rather than users of
 the Shell programming language. It describes border cases, parsing tokens
 and undefined effects left to the freedom of the implementer in minute details
 without providing an overview of the language.
