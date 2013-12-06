@@ -20,10 +20,12 @@ and the source code of [DASH][].
 ## RUNNING EXAMPLES ##
 
 You can find the example shell scripts grouped by topic in the folder
-`examples`. You can run each example with dash or any POSIX shell already
-installed on your system. The dash executable can be run from `dash/src/dash`
-in this project, it is already present in the git repository. If you wish
-to recompile it, delete the file and follow the procedure below.
+`examples`. You can run each example with dash or the standard interpreter
+`sh` already installed on your system.
+
+The dash executable can be run from `dash/src/dash` in this project,
+it is already present in the git repository. If you wish to recompile it,
+delete the file and follow the procedure below.
 
 ## COMPILING DASH ##
 
