@@ -16,5 +16,14 @@ echo "$command" | sh -s
 echo 'Run commands provided from standard input (this is also the default)'
 echo "$command" | sh
 
+echo 'Switch to the directory of the script'
+cd $(dirname $0)
+
+echo 'Run a command file, providing file name as parameter'
+sh command-file.sh
+
+echo 'Run a command file read from standard input, providing - as parameter'
+cat command-file.sh | sh -
+
 echo 'Run an interactive shell with sh -i (type exit to quit)'
 sh -i
