@@ -11,5 +11,8 @@ sh -c "$command"
 echo 'Run commands provided from standard input with sh -s'
 echo "$command" | sh -s
 
+echo 'Run commands provided from standard input (this is also the default)'
+echo "$command" | sh
+
 echo 'Run an interactive shell with sh -i (type exit to quit)'
 sh -i
