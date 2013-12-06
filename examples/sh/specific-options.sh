@@ -1,6 +1,8 @@
 cat <<- END
+	**************************************************************
 	This script illustrates specific options of the sh command,
 	which correspond to different ways to provide commands to run.
+	**************************************************************
 END
 
 command='echo run command'
