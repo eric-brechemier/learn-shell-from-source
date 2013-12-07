@@ -42,6 +42,16 @@ echo "LC_MESSAGES - locale for the internationalization (i18n) of messages,"
 echo "LC_MESSAGES - used to localize messages written to standard error"
 echo "LC_MESSAGES=$LC_MESSAGES"
 
+echo "LC_MONETARY - locale for formatting of monetary numeric values"
+echo "LC_MONETARY=$LC_MONETARY"
+
+echo "LC_NUMERIC - locale for formatting of numbers, used to select"
+echo "LC_NUMERIC - the separator character for thousands and decimals"
+echo "LC_NUMERIC=$LC_NUMERIC"
+
+echo "LC_TIME - locale for formatting of date and time"
+echo "LC_TIME=$LC_TIME"
+
 echo "NLSPATH - colon-separated list of template paths for message catalogs,"
 echo "NLSPATH - used for the internationalization (i18n) of messages"
 echo "NLSPATH=$NLSPATH"
