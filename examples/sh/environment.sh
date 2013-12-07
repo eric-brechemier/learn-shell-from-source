@@ -1,8 +1,7 @@
 cat <<- END
 	*******************************************************************
-	This script prints the description and current value of variables
-	variables that affect the execution of sh, on two or more lines
-	starting with the name of the variable.
+	This script prints the description and current value of variables,
+	on two or more lines starting with the name of the variable.
 	*******************************************************************
 END
 
@@ -43,15 +42,15 @@ echo "LC_MESSAGES - locale for the internationalization (i18n) of messages,"
 echo "LC_MESSAGES - used to localize messages written to standard error"
 echo "LC_MESSAGES=$LC_MESSAGES"
 
+echo "NLSPATH - colon-separated list of template paths for message catalogs,"
+echo "NLSPATH - used for the internationalization (i18n) of messages"
+echo "NLSPATH=$NLSPATH"
+
 echo "MAIL - path of user mailbox file for incoming emails"
 echo "MAIL=$MAIL"
 
 echo "MAILCHECK - interval in seconds between checks for new mails"
 echo "MAILCHECK=$MAILCHECK"
-
-echo "NLSPATH - colon-separated list of template paths for message catalogs,"
-echo "NLSPATH - used for the internationalization (i18n) of messages"
-echo "NLSPATH=$NLSPATH"
 
 echo "PATH - colon-separated list of paths for the lookup of commands"
 echo "PATH=$PATH"
