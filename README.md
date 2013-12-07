@@ -145,6 +145,9 @@ aspects of the language and uncover finer details step by step:
 * [2.11. Signals and Error Handling]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_11)
 
+* [trap - trap signals]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#trap)
+
 * [1.6 Built-In Utilities]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap01.html#tag\_17\_06)
 
