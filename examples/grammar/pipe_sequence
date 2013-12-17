@@ -1,0 +1,14 @@
+PATH=.
+
+# A PIPE SEQUENCE IS:
+
+# a command
+command
+
+# OR a sequence of commands separated by control operator '|'
+command | command | command
+
+# with OPTIONAL line breaks
+command |
+command |
+command

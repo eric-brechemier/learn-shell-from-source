@@ -1,0 +1,9 @@
+PATH=.
+
+# A PIPELINE IS:
+
+# a pipe sequence
+pipe_sequence
+
+# OR the reserved word '!' followed with a pipe sequence
+! pipe_sequence
