@@ -1,0 +1,13 @@
+PATH=.
+
+# A COMMAND IS:
+
+# a simple command
+simple_command
+
+# OR a compound command
+compound_command
+compound_command redirect_list
+
+# OR a function definition
+function_definition
