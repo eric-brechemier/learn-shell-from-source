@@ -109,6 +109,9 @@ aspects of the language and uncover finer details step by step:
 * [cat - concatenate and print files]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html#tag\_20\_13)
 
+* [dot - execute commands in the current environment]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_18)
+
 * [true - return true value]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/true.html#tag\_20\_133)
 
