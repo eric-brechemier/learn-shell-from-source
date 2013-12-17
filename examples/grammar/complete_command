@@ -1,0 +1,20 @@
+# The scripts in this folder illustrate the various forms
+# allowed at each level of the language, defining separate
+# scripts for the non-terminals which appear in the grammar
+# rules to give to these examples a form close to the rules.
+
+# Note: The examples are expected to run directly within their
+# parent folder 'examples/grammar' which is referred as '.' and
+# assigned to the PATH for the look-up of commands in the folder.
+PATH=.
+
+# A COMPLETE COMMAND IS:
+
+# a list
+list
+
+# OR a list followed with the separator operator ';'
+list;
+
+# OR a list followed with the separator operator '&'
+list&

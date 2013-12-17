@@ -1,0 +1,15 @@
+PATH=.
+
+# AN AND-OR LIST IS:
+
+# a pipeline
+pipeline
+
+# OR a sequence of pipelines separated by the operator '||'
+pipeline || pipeline || pipeline
+
+# OR a sequence of pipelines separated by the operator '&&'
+pipeline && pipeline && pipeline
+
+# OR a sequence of pipelines separated by the operators '||' and '&&'
+pipeline || pipeline && pipeline && pipeline || pipeline
