@@ -8,8 +8,25 @@ pipeline
 # OR a sequence of pipelines separated by the operator '||'
 pipeline || pipeline || pipeline
 
+# with OPTIONAL line breaks
+pipeline ||
+pipeline ||
+pipeline
+
 # OR a sequence of pipelines separated by the operator '&&'
 pipeline && pipeline && pipeline
 
+# with OPTIONAL line breaks
+pipeline &&
+pipeline &&
+pipeline
+
 # OR a sequence of pipelines separated by the operators '||' and '&&'
 pipeline || pipeline && pipeline && pipeline || pipeline
+
+# with OPTIONAL line breaks
+pipeline &&
+pipeline ||
+pipeline ||
+pipeline &&
+pipeline
