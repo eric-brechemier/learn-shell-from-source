@@ -1,0 +1,319 @@
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# initialize word to a value which matches none of the pattern,
+# to run none of the compound lists and thus avoid recursion
+word=WORD
+
+# A CASE CONDITIONAL CONSTRUCT IS:
+
+# a conditional construct with a list of cases separated with ';;',
+# each case starting with patterns to match followed with a compound
+# list of commands to run only in the first case matching given word
+
+#   Note: when ';;' is omitted after the last case,
+#   dash and bash expect a newline before 'esac'
+#
+#   case $word in pattern1) compound_list esac
+#   case $word in pattern1) compound_list;; pattern2) compound_list esac
+#   case $word in pattern1|pattern2) compound_list esac
+#
+#   case $word
+#   in pattern1) compound_list esac
+#
+#   case $word
+#   in pattern1) compound_list;; pattern2) compound_list esac
+#
+#   case $word
+#   in pattern1|pattern2) compound_list esac
+
+case $word in pattern1) compound_list
+esac
+
+case $word in pattern1) compound_list;; pattern2) compound_list
+esac
+
+case $word in pattern1|pattern2) compound_list
+esac
+
+case $word
+in pattern1) compound_list
+esac
+
+case $word
+in pattern1) compound_list;; pattern2) compound_list
+esac
+
+case $word in
+pattern1) compound_list
+esac
+
+case $word in
+pattern1) compound_list;; pattern2) compound_list
+esac
+
+case $word in
+pattern1) compound_list;;
+pattern2|pattern3) compound_list;;
+pattern4) compound_list
+esac
+
+case $word in
+pattern1|pattern2) compound_list
+esac
+
+case $word
+in
+pattern1) compound_list
+esac
+
+case $word
+in
+pattern1) compound_list;; pattern2) compound_list
+esac
+
+case $word
+in
+pattern1) compound_list;;
+pattern2|pattern3) compound_list;;
+pattern4) compound_list
+esac
+
+case $word
+in
+pattern1|pattern2) compound_list
+esac
+
+# with OPTIONAL parentheses before the lists of patterns
+
+#   Note: when ';;' is omitted after the last case,
+#   dash and bash expect a newline before 'esac'
+#
+#   case $word in (pattern1) compound_list esac
+#   case $word in (pattern1) compound_list;; (pattern2) compound_list esac
+#   case $word in (pattern1|pattern2) compound_list esac
+#
+#   case $word
+#   in (pattern1) compound_list esac
+#
+#   case $word
+#   in (pattern1) compound_list;; (pattern2) compound_list esac
+#
+#   case $word
+#   in (pattern1|pattern2) compound_list esac
+
+case $word in (pattern1) compound_list
+esac
+
+case $word in (pattern1) compound_list;; (pattern2) compound_list
+esac
+
+case $word in (pattern1|pattern2) compound_list
+esac
+
+case $word
+in (pattern1) compound_list
+esac
+
+case $word
+in (pattern1) compound_list;; (pattern2) compound_list
+esac
+
+case $word in
+(pattern1) compound_list
+esac
+
+case $word in
+(pattern1) compound_list;; (pattern2) compound_list
+esac
+
+case $word in
+(pattern1) compound_list;;
+(pattern2|pattern3) compound_list;;
+(pattern4) compound_list
+esac
+
+case $word in
+(pattern1|pattern2) compound_list
+esac
+
+case $word
+in
+(pattern1) compound_list
+esac
+
+case $word
+in
+(pattern1) compound_list;; (pattern2) compound_list
+esac
+
+case $word
+in
+(pattern1) compound_list;;
+(pattern2|pattern3) compound_list;;
+(pattern4) compound_list
+esac
+
+case $word
+in
+(pattern1|pattern2) compound_list
+esac
+
+# with an OPTIONAL ';;' after the last case
+
+case $word in pattern1) compound_list;; esac
+case $word in pattern1) compound_list;; pattern2) compound_list;; esac
+case $word in pattern1|pattern2) compound_list;; esac
+
+case $word
+in pattern1) compound_list;; esac
+
+case $word
+in pattern1) compound_list;; pattern2) compound_list;; esac
+
+case $word
+in pattern1|pattern2) compound_list;; esac
+
+case $word in pattern1) compound_list;;
+esac
+
+case $word in pattern1) compound_list;; pattern2) compound_list;;
+esac
+
+case $word in pattern1|pattern2) compound_list;;
+esac
+
+case $word
+in pattern1) compound_list;;
+esac
+
+case $word
+in pattern1) compound_list;; pattern2) compound_list;;
+esac
+
+case $word in
+pattern1) compound_list;;
+esac
+
+case $word in
+pattern1) compound_list;; pattern2) compound_list;;
+esac
+
+case $word in
+pattern1) compound_list;;
+pattern2|pattern3) compound_list;;
+pattern4) compound_list;;
+esac
+
+case $word in
+pattern1|pattern2) compound_list;;
+esac
+
+case $word
+in
+pattern1) compound_list;;
+esac
+
+case $word
+in
+pattern1) compound_list;; pattern2) compound_list;;
+esac
+
+case $word
+in
+pattern1) compound_list;;
+pattern2|pattern3) compound_list;;
+pattern4) compound_list;;
+esac
+
+case $word
+in
+pattern1|pattern2) compound_list;;
+esac
+
+# with OPTIONAL parentheses before the lists of patterns
+# and an OPTIONAL ';;' after the last case
+
+case $word in (pattern1) compound_list;; esac
+case $word in (pattern1) compound_list;; (pattern2) compound_list;; esac
+case $word in (pattern1|pattern2) compound_list;; esac
+
+case $word
+in (pattern1) compound_list;; esac
+
+case $word
+in (pattern1) compound_list;; (pattern2) compound_list;; esac
+
+case $word
+in (pattern1|pattern2) compound_list;; esac
+
+case $word in (pattern1) compound_list;;
+esac
+
+case $word in (pattern1) compound_list;; (pattern2) compound_list;;
+esac
+
+case $word in (pattern1|pattern2) compound_list;;
+esac
+
+case $word
+in (pattern1) compound_list;;
+esac
+
+case $word
+in (pattern1) compound_list;; (pattern2) compound_list;;
+esac
+
+case $word in
+(pattern1) compound_list;;
+esac
+
+case $word in
+(pattern1) compound_list;; (pattern2) compound_list;;
+esac
+
+case $word in
+(pattern1) compound_list;;
+(pattern2|pattern3) compound_list;;
+(pattern4) compound_list;;
+esac
+
+case $word in
+(pattern1|pattern2) compound_list;;
+esac
+
+case $word
+in
+(pattern1) compound_list;;
+esac
+
+case $word
+in
+(pattern1) compound_list;; (pattern2) compound_list;;
+esac
+
+case $word
+in
+(pattern1) compound_list;;
+(pattern2|pattern3) compound_list;;
+(pattern4) compound_list;;
+esac
+
+case $word
+in
+(pattern1|pattern2) compound_list;;
+esac
+
+# OR a conditional construct with no pattern to match (which never runs)
+case $word in esac
+
+case $word in
+esac
+
+#   Note: this form is accepted in dash, but rejected in bash
+#
+#   case $word
+#   in esac
+
+case $word
+in
+esac
