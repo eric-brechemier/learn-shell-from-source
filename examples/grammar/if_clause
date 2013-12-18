@@ -1,0 +1,83 @@
+# Note: for the 'then' and 'fi' to be detected in bash/dash,
+# the compound lists in the condition and the body of the if
+# must end with a separator: '&', ';' or newline.
+# This requirement is not captured by the formal grammar,
+# and not described in the semantics of the construct.
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# define compound_list_condition() and compound_list_otherwise() as aliases
+# to false() to run none of the compound lists and avoid recursion.
+# Note: the script requires the option '-O expand_aliases'
+# to enable alias expansion in a non-interactive script in bash.
+alias compound_list_condition=false
+alias compound_list_otherwise=false
+
+# AN IF CONDITIONAL CONSTRUCT IS:
+
+# a conditional construct with a compound list to run when
+# the exit status of the compound list condition is 0
+if compound_list_condition; then compound_list; fi
+if compound_list_condition& then compound_list& fi
+
+if compound_list_condition
+then compound_list
+fi
+
+# with an OPTIONAL 'else' part to run when the exit status
+# of the compound list condition is not 0
+if compound_list_condition; then compound_list; else compound_list_otherwise; fi
+if compound_list_condition& then compound_list& else compound_list_otherwise& fi
+
+if compound_list_condition
+then compound_list
+else compound_list_otherwise
+fi
+
+# with OPTIONAL additional tests in 'elif' blocks with compound lists to run
+# when the exit status of corresponding compound list condition is 0
+if compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; fi
+if compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& fi
+
+if compound_list_condition
+then compound_list
+elif compound_list_condition
+then compound_list
+fi
+
+if compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; fi
+if compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& fi
+
+if compound_list_condition
+then compound_list
+elif compound_list_condition
+then compound_list
+elif compound_list_condition
+then compound_list
+fi
+
+# with OPTIONAL additional tests in 'elif' blocks with compound lists to run
+# when the exit status of corresponding compound list condition is 0
+# and an OPTIONAL 'else' part to run when the exit status
+# of none of the compound list conditions is 0
+if compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; else compound_list_otherwise; fi
+if compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& else compound_list_otherwise& fi
+
+if compound_list_condition
+then compound_list
+elif compound_list_condition
+then compound_list
+else compound_list_otherwise
+fi
+
+if compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; else compound_list_otherwise; fi
+if compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& else compound_list_otherwise& fi
+
+if compound_list_condition
+then compound_list
+elif compound_list_condition
+then compound_list
+elif compound_list_condition
+then compound_list
+else compound_list_otherwise
+fi
+
