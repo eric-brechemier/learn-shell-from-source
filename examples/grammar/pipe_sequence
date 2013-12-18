@@ -1,4 +1,4 @@
-PATH=.
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
 
 # A PIPE SEQUENCE IS:
 
