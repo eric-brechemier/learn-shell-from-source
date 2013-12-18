@@ -1,0 +1,27 @@
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# A TERM IS:
+
+# an AND-OR list
+and_or
+
+# OR a list of AND-OR lists separated by ';', '&' and/or newlines
+and_or;and_or;and_or
+and_or&and_or&and_or
+and_or;and_or&and_or
+
+and_or&
+and_or&
+and_or
+
+and_or;
+and_or;
+and_or
+
+and_or
+and_or
+and_or
+
+and_or;
+and_or&
+and_or
