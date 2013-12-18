@@ -1,2 +1,21 @@
 PATH="$(dirname $0):$(dirname $(command -v dirname))"
 
+# A COMPOUND LIST IS:
+
+# a term
+term
+
+# preceded with OPTIONAL newlines and followed with an OPTIONAL separator
+# operator, '&' or ';', followed with OPTIONAL newlines
+term;term&term
+
+term;
+term&
+term
+
+term&
+
+term;
+
+term
+
