@@ -1,0 +1,64 @@
+# It appears that in the do_group, a delimiter is required at the end
+# of the compound_list to detect 'done' as the end of the for loop;
+# I observed the same behavior in both dash and bash. However, this
+# is described neither in the grammar nor in the command semantics.
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# initialize words with an empty list
+# to run none of the compound lists and thus avoid recursion
+words=
+
+# A FOR LOOP IS:
+
+# a loop that runs a compound list for each positional parameter
+for parameter do compound_list; done
+for parameter do compound_list& done
+for parameter do compound_list
+done
+
+for parameter
+do compound_list; done
+
+for parameter
+do compound_list& done
+
+for parameter
+do compound_list
+done
+
+# OR a loop with an empty list of items (which never runs)
+for item in; do compound_list; done
+
+for item in;
+do compound_list& done
+
+for item in
+do compound_list
+done
+
+
+# OR a loop that runs a compound list for each item in the list
+for item in $words; do compound_list; done
+for item in $words; do compound_list& done
+for item in $words; do compound_list
+done
+
+for item in $words;
+do compound_list; done
+
+for item in $words;
+do compound_list& done
+
+for item in $words;
+do compound_list
+done
+
+for item in $words
+do compound_list; done
+
+for item in $words
+do compound_list& done
+
+for item in $words
+do compound_list
+done
