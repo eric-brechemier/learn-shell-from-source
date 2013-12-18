@@ -1,0 +1,11 @@
+# Strangely enough, while the grammar definition of subshell and brace_group
+# are similar, there is no need for an end delimiter before the closing ')'
+# in this case; this confirms that this requirement is not captured by the
+# formal definition in the grammar but comes from the description of semantics.
+
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# A SUBSHELL IS:
+
+# a compound list between parentheses
+( compound_list )

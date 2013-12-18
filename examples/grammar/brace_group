@@ -1,0 +1,20 @@
+# Although the need for a delimiter at the end of the compound_list
+# is not explicit in the grammar (a compound list can also consist of
+# a single term or a list of new lines followed with a term), the need
+# for a delimiter, ';' or newlines, to recognize the closing '}' is hinted
+# in the text description in "Grouping Commands", and omitting the delimiter
+# is rejected by both dash and bash. As described in the grammar, '&' can
+# also be used as end delimiter.
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# A BRACE GROUP IS:
+
+# braces around a compound list using ';' as end delimiter
+{ compound_list; }
+
+# OR braces around a compound list using '&' as end delimiter
+{ compound_list& }
+
+# OR braces around a compound list using newlines as end delimiter
+{ compound_list
+}

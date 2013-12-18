@@ -1,2 +1,24 @@
 PATH="$(dirname $0):$(dirname $(command -v dirname))"
 
+# A COMPOUND COMMAND IS:
+
+# a group of commands between braces (executed in current process)
+brace_group
+
+# OR a group of commands between parentheses (executed in a subshell)
+subshell
+
+# OR a for loop
+for_clause
+
+# OR a case conditional construct
+case_clause
+
+# OR an if conditional construct
+if_clause
+
+# OR a while loop
+while_clause
+
+# OR an until loop
+until_clause
