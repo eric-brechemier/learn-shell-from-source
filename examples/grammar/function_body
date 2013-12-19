@@ -1,5 +1,11 @@
 PATH="$(dirname $0):$(dirname $(command -v dirname))"
 
+# define compound_command() as an alias to false()
+# to avoid infinite recursion through compound_command script.
+# Note: the script requires the option '-O expand_aliases'
+# to enable alias expansion in a non-interactive script in bash.
+alias compound_command=false
+
 # A FUNCTION BODY IS:
 
 # a compound command
