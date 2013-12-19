@@ -8,12 +8,11 @@ cmd_name
 # followed with OPTIONAL redirections
 cmd_name cmd_suffix
 
-# OR a sequence of OPTIONAL variable assignments and redirections,
-# in any order
+# OR a sequence of OPTIONAL variable assignments and redirections, in any order
 cmd_prefix
 
 # followed with an OPTIONAL command word
 cmd_prefix cmd_word
 
-# followed with OPTIONAL redirections
+# followed with OPTIONAL words and redirections, in any order
 cmd_prefix cmd_word cmd_suffix
