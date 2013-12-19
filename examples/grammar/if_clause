@@ -5,11 +5,13 @@
 # and not described in the semantics of the construct.
 PATH="$(dirname $0):$(dirname $(command -v dirname))"
 
-# define compound_list_condition() and compound_list_otherwise() as aliases
-# to false() to run none of the compound lists and avoid recursion.
+# define compound_list_condition(), compound_list_asynchronous()
+# and compound_list_otherwise() as aliases to false() to avoid
+# infinite recursion through compound_list script.
 # Note: the script requires the option '-O expand_aliases'
 # to enable alias expansion in a non-interactive script in bash.
 alias compound_list_condition=false
+alias compound_list_asynchronous=false
 alias compound_list_otherwise=false
 
 # AN IF CONDITIONAL CONSTRUCT IS:
@@ -17,7 +19,7 @@ alias compound_list_otherwise=false
 # a conditional construct with a compound list to run when
 # the exit status of the compound list condition is 0
 if compound_list_condition; then compound_list; fi
-if compound_list_condition& then compound_list& fi
+if compound_list_condition& then compound_list_asynchronous& fi
 
 if compound_list_condition
 then compound_list
@@ -26,7 +28,7 @@ fi
 # with an OPTIONAL 'else' part to run when the exit status
 # of the compound list condition is not 0
 if compound_list_condition; then compound_list; else compound_list_otherwise; fi
-if compound_list_condition& then compound_list& else compound_list_otherwise& fi
+if compound_list_condition& then compound_list_asynchronous& else compound_list_otherwise& fi
 
 if compound_list_condition
 then compound_list
@@ -36,7 +38,7 @@ fi
 # with OPTIONAL additional tests in 'elif' blocks with compound lists to run
 # when the exit status of corresponding compound list condition is 0
 if compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; fi
-if compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& fi
+if compound_list_condition& then compound_list_asynchronous& elif compound_list_condition& then compound_list_asynchronous& fi
 
 if compound_list_condition
 then compound_list
@@ -45,7 +47,7 @@ then compound_list
 fi
 
 if compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; fi
-if compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& fi
+if compound_list_condition& then compound_list_asynchronous& elif compound_list_condition& then compound_list_asynchronous& elif compound_list_condition& then compound_list_asynchronous& fi
 
 if compound_list_condition
 then compound_list
@@ -60,7 +62,7 @@ fi
 # and an OPTIONAL 'else' part to run when the exit status
 # of none of the compound list conditions is 0
 if compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; else compound_list_otherwise; fi
-if compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& else compound_list_otherwise& fi
+if compound_list_condition& then compound_list_asynchronous& elif compound_list_condition& then compound_list_asynchronous& else compound_list_otherwise& fi
 
 if compound_list_condition
 then compound_list
@@ -70,7 +72,7 @@ else compound_list_otherwise
 fi
 
 if compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; elif compound_list_condition; then compound_list; else compound_list_otherwise; fi
-if compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& elif compound_list_condition& then compound_list& else compound_list_otherwise& fi
+if compound_list_condition& then compound_list_asynchronous& elif compound_list_condition& then compound_list_asynchronous& elif compound_list_condition& then compound_list_asynchronous& else compound_list_otherwise& fi
 
 if compound_list_condition
 then compound_list
