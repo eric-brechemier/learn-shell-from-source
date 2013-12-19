@@ -1,0 +1,23 @@
+# Note: for the 'do' and 'done' to be detected in bash/dash,
+# the compound lists in the condition and the body of the while
+# must end with a separator: '&', ';' or newline.
+# This requirement is not captured by the formal grammar,
+# and not described in the semantics of the construct.
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# define compound_list_condition() as an alias to true()
+# to avoid infinite recursion through compound_list script.
+# Note: the script requires the option '-O expand_aliases'
+# to enable alias expansion in a non-interactive script in bash.
+alias compound_list_condition=true
+
+# AN UNTIL LOOP IS:
+
+# a loop which runs the compound list within repeatedly as long
+# as the exit status of the compound list condition is non-zero
+until compound_list_condition; do compound_list; done
+until compound_list_condition& do compound_list& done
+
+until compound_list_condition
+do compound_list
+done
