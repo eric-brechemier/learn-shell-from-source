@@ -1,2 +1,9 @@
 PATH="$(dirname $0):$(dirname $(command -v dirname))"
 
+# A FUNCTION DEFINITION IS:
+
+# a name followed with '()' and a function body
+function1() compound_command
+
+function2()
+compound_command
