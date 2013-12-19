@@ -1,0 +1,22 @@
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# initialize argument to an empty value
+# to avoid running any command in these examples
+argument=
+
+# A COMMAND SUFFIX IS:
+
+# a sequence of arguments for the command
+$argument
+$argument $argument $argument
+
+# OR a sequence of redirections
+io_redirect
+io_redirect io_redirect io_redirect
+
+# OR a sequence of arguments and redirections, in any order
+$argument io_redirect
+$argument $argument io_redirect io_redirect
+$argument io_redirect $argument io_redirect
+io_redirect $argument io_redirect $argument
+io_redirect io_redirect $argument $argument

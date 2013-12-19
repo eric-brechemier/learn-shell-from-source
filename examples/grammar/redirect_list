@@ -1,2 +1,7 @@
 PATH="$(dirname $0):$(dirname $(command -v dirname))"
 
+# A LIST OF REDIRECTIONS IS:
+
+# a sequence of one or more redirections
+io_redirect
+io_redirect io_redirect io_redirect

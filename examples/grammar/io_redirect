@@ -1,0 +1,174 @@
+# Note:
+# dash only supports file descriptors in the range 0-9,
+# which is the minimum required according to "§2.7 Redirection"
+
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# A REDIRECTION IS:
+
+# a file redirection
+
+  # open file 'input' for reading and use it as standard input
+<input
+
+  # duplicate an input file descriptor:
+  # use the corresponding file as standard input
+<&0
+<&1
+<&2
+
+  # close standard input
+<&-
+
+  # create the input/output file 'input' if is does not exist,
+  # open it for reading and writing, and use it as standard input
+<>input
+
+  # create or truncate the output file 'output' to an empty file,
+  # open it for for writing and use it as standard output,
+  # or fail if the file exists and the noclobber option (set -C) is set.
+>output
+
+  # create or truncate the output file 'output' to an empty file,
+  # open it for for writing and use it as standard output
+  # (no failure when the file exists and the noclobber option (set -C) is set)
+>|output
+
+  # create the output file 'output' if it does not exist,
+  # open it for writing by appending to its current contents,
+  # and use it as standard output
+>>output
+
+  # duplicate an output file descriptor:
+  # use the corresponding file as standard output
+>&0
+>&1
+>&2
+
+  # close standard output
+>&-
+
+# OR a file redirection preceded by an OPTIONAL file descriptor integer
+
+  # open file 'input' for reading and use it as standard input
+0<input
+
+  # duplicate an input file descriptor:
+  # use the corresponding file as standard input
+0<&0
+0<&1
+0<&2
+
+  # close standard input
+0<&-
+
+  # create the input/output file 'input' if is does not exist,
+  # open it for reading and writing, and use it as standard input
+0<>input
+
+  # create or truncate the output file 'output' to an empty file,
+  # open it for for writing and use it as standard output,
+  # or fail if the file exists and the noclobber option (set -C) is set.
+1>output
+
+  # create or truncate the output file 'output' to an empty file,
+  # open it for for writing and use it as standard output
+  # (no failure when the file exists and the noclobber option (set -C) is set)
+1>|output
+
+  # create the output file 'output' if it does not exist,
+  # open it for writing by appending to its current contents,
+  # and use it as standard output
+1>>output
+
+  # duplicate an output file descriptor:
+  # use the corresponding file as standard output
+1>&0
+1>&1
+1>&2
+
+  # close standard output
+1>&-
+
+  # open file 'input' for reading and use it as file descriptor 5
+5<input
+exit
+
+  # duplicate an input file descriptor:
+  # use the corresponding file as file descriptor 5
+5<&0
+5<&1
+5<&2
+
+  # close file descriptor 5
+5<&-
+
+  # create the input/output file 'input' if is does not exist,
+  # open it for reading and writing, and use it as file descriptor 6
+6<>input
+
+  # create or truncate the output file 'output' to an empty file,
+  # open it for for writing and use it as file descriptor 7,
+  # or fail if the file exists and the noclobber option (set -C) is set.
+7>output
+
+  # create or truncate the output file 'output' to an empty file,
+  # open it for for writing and use it as file descriptor 7
+  # (no failure when the file exists and the noclobber option (set -C) is set)
+7>|output
+
+  # create the output file 'output' if it does not exist,
+  # open it for writing by appending to its current contents,
+  # and use it as file descriptor 7
+7>>output
+
+  # duplicate an output file descriptor:
+  # use the corresponding file as file descriptor 7
+7>&0
+7>&1
+7>&2
+
+  # close file descriptor 7
+7>&-
+
+# OR a here-document
+
+  # extract the here-document,
+  # delimited by the given word immediately followed with a newline,
+  # and use it as standard input
+<<word
+line 1
+line 2
+line 3
+word
+
+  # extract the here-document,
+  # delimited by the given word immediately followed with a newline,
+  # removing tabs at the start of each line,
+  # and use it as standard input
+<<-word
+		line 1
+	line 2
+line 3
+word
+
+# OR a here-document preceded by an OPTIONAL file descriptor integer
+
+  # extract the here-document,
+  # delimited by the given word immediately followed with a newline,
+  # and use it as file descriptor 4
+4<<word
+line 1
+line 2
+line 3
+word
+
+  # extract the here-document,
+  # delimited by the given word immediately followed with a newline,
+  # removing tabs at the start of each line,
+  # and use it as file descriptor 4
+4<<-word
+		line 1
+	line 2
+line 3
+word

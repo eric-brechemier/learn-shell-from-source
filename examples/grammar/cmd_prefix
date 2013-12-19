@@ -1,0 +1,19 @@
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# A COMMAND PREFIX IS:
+
+# a sequence of variable assignments
+variable1=value1
+variable1=value1 variable2=value2 variable3=value3
+
+# OR a sequence of redirections
+io_redirect
+io_redirect io_redirect io_redirect
+
+# OR a sequence of variable assignments and redirections, in any order
+variable1=value1 io_redirect
+io_redirect variable1=value1
+variable1=value1 variable2=value2 io_redirect io_redirect
+variable1=value1 io_redirect variable2=value2 io_redirect
+io_redirect variable1=value1 io_redirect variable2=value2
+io_redirect io_redirect variable1=value1 variable2=value2
