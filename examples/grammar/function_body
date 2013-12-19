@@ -1,0 +1,9 @@
+PATH="$(dirname $0):$(dirname $(command -v dirname))"
+
+# A FUNCTION BODY IS:
+
+# a compound command
+compound_command
+
+# followed with an OPTIONAL list of redirections
+compound_command redirect_list
