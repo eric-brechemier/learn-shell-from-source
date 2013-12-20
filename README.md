@@ -88,9 +88,6 @@ aspects of the language and uncover finer details step by step:
 * [return - return from a function or dot script]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_24)
 
-* [exit - cause the shell to exit]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_21)
-
 * [2.13. Pattern Matching Notation]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_13)
 
@@ -147,6 +144,9 @@ aspects of the language and uncover finer details step by step:
 
 * [2.8 Exit Status and Errors]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_08)
+
+* [exit - cause the shell to exit]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_21)
 
 * [2.11. Signals and Error Handling]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_11)
