@@ -103,9 +103,6 @@ aspects of the language and uncover finer details step by step:
 * [printf - write formatted output]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/printf.html#tag\_20\_94)
 
-* [cat - concatenate and print files]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html#tag\_20\_13)
-
 * [dot - execute commands in the current environment]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_18)
 
@@ -129,6 +126,9 @@ aspects of the language and uncover finer details step by step:
 
 * [read - read a line from standard input]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/read.html#tag\_20\_109)
+
+* [cat - concatenate and print files]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html#tag\_20\_13)
 
 * [2.7 Redirection]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_07)
