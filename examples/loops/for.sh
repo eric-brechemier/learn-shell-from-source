@@ -66,7 +66,7 @@ echo "+ Break from a parent loop when item is '42' in a nested loop"
 echo "before: item=$item"
 for digit1 in 3 4 5
 do
-  for digit2 in 1 2 3 4 5 6 7 8 9
+  for digit2 in 0 1 2 3 4 5 6 7 8 9
   do
     item="$digit1$digit2"
     echo "inside: item=$item"
@@ -78,3 +78,31 @@ do
 done
 echo "after: item=$item"
 
+echo "+ Skip item '42' and continue"
+echo "before: item=$item"
+for item in 40 41 42 43 44
+do
+  if test $item = 42
+  then
+    continue
+  fi
+  echo "inside: item=$item"
+done
+echo "after: item=$item"
+
+echo "+ Continue in parent loop when item is '42' in a nested loop"
+echo "before: item=$item"
+for digit1 in 3 4 5
+do
+  for digit2 in 0 1 2 3 4 5 6 7 8 9
+  do
+    item="$digit1$digit2"
+    echo "inside: item=$item"
+    if test $item = 42
+    then
+      # Note: this is equivalent to 'break' or 'break 1' here
+      continue 2
+    fi
+  done
+done
+echo "after: item=$item"
