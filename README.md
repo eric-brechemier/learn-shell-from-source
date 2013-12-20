@@ -103,9 +103,6 @@ aspects of the language and uncover finer details step by step:
 * [printf - write formatted output]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/printf.html#tag\_20\_94)
 
-* [dot - execute commands in the current environment]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_18)
-
 * [true - return true value]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/true.html#tag\_20\_133)
 
@@ -159,6 +156,9 @@ aspects of the language and uncover finer details step by step:
 
 * [2.12 Shell Execution Environment]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_12)
+
+* [dot - execute commands in the current environment]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_18)
 
 * [4. Utilities]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap04.html#tag\_20)
