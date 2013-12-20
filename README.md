@@ -88,9 +88,6 @@ aspects of the language and uncover finer details step by step:
 * [return - return from a function or dot script]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_24)
 
-* [set - set or unset options and positional parameters]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_25)
-
 * [exit - cause the shell to exit]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_21)
 
@@ -126,6 +123,9 @@ aspects of the language and uncover finer details step by step:
 
 * [expr - evaluate arguments as an expression]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/expr.html#tag\_20\_42)
+
+* [set - set or unset options and positional parameters]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_25)
 
 * [getopts - parse utility options]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/getopts.html#tag\_20\_54)
