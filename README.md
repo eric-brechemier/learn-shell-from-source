@@ -88,15 +88,6 @@ aspects of the language and uncover finer details step by step:
 * [return - return from a function or dot script]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_24)
 
-* [2.13. Pattern Matching Notation]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_13)
-
-* [2.5 Parameters and Variables]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_05)
-
-* [2.6 Word Expansions]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_06)
-
 * [echo - write arguments to standard output]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/echo.html#tag\_20\_37)
 
@@ -115,11 +106,20 @@ aspects of the language and uncover finer details step by step:
 * [expr - evaluate arguments as an expression]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/expr.html#tag\_20\_42)
 
+* [2.5 Parameters and Variables]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_05)
+
+* [2.6 Word Expansions]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_06)
+
 * [set - set or unset options and positional parameters]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_25)
 
 * [getopts - parse utility options]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/getopts.html#tag\_20\_54)
+
+* [2.7 Redirection]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_07)
 
 * [read - read a line from standard input]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/read.html#tag\_20\_109)
@@ -127,8 +127,8 @@ aspects of the language and uncover finer details step by step:
 * [cat - concatenate and print files]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html#tag\_20\_13)
 
-* [2.7 Redirection]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_07)
+* [2.13. Pattern Matching Notation]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_13)
 
 * [2.2 Quoting]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_02)
