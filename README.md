@@ -67,6 +67,9 @@ aspects of the language and uncover finer details step by step:
 * [sh - shell, the standard command language interpreter]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sh.html#tag\_20\_117)
 
+* [echo - write arguments to standard output]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/echo.html#tag\_20\_37)
+
 * [1.3 Grammar Conventions]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap01.html#tag\_17\_03)
 
@@ -87,9 +90,6 @@ aspects of the language and uncover finer details step by step:
 
 * [return - return from a function or dot script]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_24)
-
-* [echo - write arguments to standard output]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/echo.html#tag\_20\_37)
 
 * [printf - write formatted output]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/printf.html#tag\_20\_94)
