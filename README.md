@@ -109,6 +109,12 @@ aspects of the language and uncover finer details step by step:
 * [2.5 Parameters and Variables]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_05)
 
+* [unset - unset values and attributes of variables and functions]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_29)
+
+* [readonly - set the readonly attribute for variables]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_23)
+
 * [2.6 Word Expansions]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_06)
 
