@@ -82,6 +82,9 @@ aspects of the language and uncover finer details step by step:
 * [2.9 Shell Commands]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_09)
 
+* [colon - null utility]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_16)
+
 * [break - exit from for, while, or until loop]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_15)
 
