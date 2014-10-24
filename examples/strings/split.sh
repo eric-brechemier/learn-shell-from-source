@@ -5,8 +5,9 @@ cat <<- doc
 	****************************************************
 doc
 
-string='A B	C
-D	E F'
+string='AAA	BBB	CCC
+1;2;3;4;5;6;7;8;9
+one,two,three'
 echo "string='$string'"
 
 echo
@@ -21,11 +22,24 @@ echo 'Split-1:' $*
 
 echo
 
-echo 'Disable splitting'
+echo 'Disable splitting and expand string again'
 IFS=''
 echo "IFS='$IFS'"
 set $string
 echo 'No Split:' $*
+
+echo
+
+echo 'Split string on newlines only, then loop and split on comma-tab-semicolon'
+IFS='
+'
+set $string
+for line
+do
+  IFS=',	;'
+  set $line
+  echo 'Line:' $*
+done
 
 echo
 
