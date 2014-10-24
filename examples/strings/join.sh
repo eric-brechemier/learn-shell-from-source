@@ -19,22 +19,22 @@ echo "result: '$result'"
 
 echo
 
-IFS=":$IFS"
 echo 'Join with colon as delimiter'
+IFS=":$IFS"
 result=$*
 echo "result: '$result'"
 
 echo
 
-IFS=','
 echo 'Join with comma as delimiter'
+IFS=','
 result=$*
 echo "result: '$result'"
 
 echo
 
-IFS=''
 echo 'Join without delimiter'
+IFS=''
 result=$*
 echo "result: '$result'"
 
