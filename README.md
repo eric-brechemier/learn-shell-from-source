@@ -121,6 +121,9 @@ aspects of the language and uncover finer details step by step:
 * [set - set or unset options and positional parameters]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_25)
 
+* [shift - shift positional parameters]
+(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_26)
+
 * [getopts - parse utility options]
 (http://pubs.opengroup.org/onlinepubs/9699919799/utilities/getopts.html#tag\_20\_54)
 
