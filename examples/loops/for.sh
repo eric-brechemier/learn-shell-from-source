@@ -34,6 +34,17 @@ do
 done
 echo "after: item=$item"
 
+echo "+ Loop on the same list of words using a custom character as delimiter"
+echo "before: item=$item"
+list="one#two#three"
+IFS='#'
+for item in $list
+do
+  echo "inside: item=$item"
+done
+echo "after: item=$item"
+unset IFS
+
 echo "+ Loop with no item to process"
 echo "before: item=$item"
 for item in
