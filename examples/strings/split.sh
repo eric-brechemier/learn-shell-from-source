@@ -6,6 +6,7 @@ cat <<- doc
 doc
 
 string='AAA	BBB	CCC
+		  1	,	2,	3	,	4,, 6 ,,   8   	
 1;2;3;4;5;6;7;8;9
 one,two,three'
 echo "string='$string'"
@@ -15,6 +16,14 @@ echo
 echo 'Split string on space-tab-newline (default) into positional parameters'
 set $string
 echo 'Split:' $*
+i=1
+for item in $*
+do
+  echo "$i: '$item'"
+  i=$((i+1))
+done
+
+echo
 
 echo 'Discard first positional parameter'
 shift 1
@@ -39,6 +48,12 @@ do
   IFS=',	;'
   set $line
   echo 'Line:' $*
+  i=1
+  for field in $*
+  do
+    echo "$i: '$field'"
+    i=$((i+1))
+  done
 done
 
 echo
