@@ -10,8 +10,36 @@ doc
 
 echo "+ Loop on positional parameters"
 echo "before: item=$item"
-set -- one two three
+set -- '1 one' '2 two' '3 three'
 for item
+do
+  echo "inside: item=$item"
+done
+echo "after: item=$item"
+
+echo "+ Loop on positional parameters, provided as \$@ (unquoted)"
+for item in $@
+do
+  echo "inside: item=$item"
+done
+echo "after: item=$item"
+
+echo "+ Loop on positional parameters, provided as \"\$@\" (quoted)"
+for item in "$@"
+do
+  echo "inside: item=$item"
+done
+echo "after: item=$item"
+
+echo "+ Loop on positional parameters, provided as \$* (unquoted)"
+for item in $*
+do
+  echo "inside: item=$item"
+done
+echo "after: item=$item"
+
+echo "+ Loop on positional parameters, provided as \"\$*\" (quoted)"
+for item in "$*"
 do
   echo "inside: item=$item"
 done
