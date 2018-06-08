@@ -58,134 +58,177 @@ without providing an overview of the language.
 I recommend the following reading order to start with the most general
 aspects of the language and uncover finer details step by step:
 
-* [2.1 Shell Introduction]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_01)
+* [2.1 Shell Introduction][2.1]
 
-* [1.4 Utility Description Defaults]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap01.html#tag\_17\_04)
+[2.1]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_01
 
-* [sh - shell, the standard command language interpreter]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sh.html#tag\_20\_117)
+* [1.4 Utility Description Defaults][1.4]
 
-* [echo - write arguments to standard output]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/echo.html#tag\_20\_37)
+[1.4]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap01.html#tag_17_04
 
-* [1.3 Grammar Conventions]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap01.html#tag\_17\_03)
+* [sh - shell, the standard command language interpreter][sh]
 
-* [2.4 Reserved Words]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_04)
+[sh]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sh.html#tag_20_117
 
-* [2.10 Shell Grammar]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_10)
+* [echo - write arguments to standard output][echo]
 
-* [2.9 Shell Commands]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_09)
+[echo]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/echo.html#tag_20_37
 
-* [colon - null utility]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_16)
+* [1.3 Grammar Conventions][1.3]
 
-* [break - exit from for, while, or until loop]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_15)
+[1.3]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap01.html#tag_17_03
 
-* [continue - continue for, while, or until loop]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_17)
+* [2.4 Reserved Words][2.4]
 
-* [return - return from a function or dot script]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_24)
+[2.4]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_04
 
-* [printf - write formatted output]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/printf.html#tag\_20\_94)
+* [2.10 Shell Grammar][2.10]
 
-* [true - return true value]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/true.html#tag\_20\_133)
+[2.10]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_10
 
-* [false - return false value]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/false.html#tag\_20\_43)
+* [2.9 Shell Commands][2.9]
 
-* [test - evaluate expression]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/test.html#tag\_20\_128)
+[2.9]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09
 
-* [expr - evaluate arguments as an expression]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/expr.html#tag\_20\_42)
+* [colon - null utility][colon]
 
-* [2.5 Parameters and Variables]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_05)
+[colon]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_16
 
-* [unset - unset values and attributes of variables and functions]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_29)
+* [break - exit from for, while, or until loop][break]
 
-* [readonly - set the readonly attribute for variables]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_23)
+[break]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_15
 
-* [2.6 Word Expansions]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_06)
+* [continue - continue for, while, or until loop][continue]
 
-* [set - set or unset options and positional parameters]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_25)
+[continue]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_17
 
-* [shift - shift positional parameters]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_26)
+* [return - return from a function or dot script][return]
 
-* [getopts - parse utility options]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/getopts.html#tag\_20\_54)
+[return]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_24
 
-* [2.7 Redirection]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_07)
+* [printf - write formatted output][printf]
 
-* [read - read a line from standard input]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/read.html#tag\_20\_109)
+[printf]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/printf.html#tag_20_94
 
-* [cat - concatenate and print files]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html#tag\_20\_13)
+* [true - return true value][true]
 
-* [2.13. Pattern Matching Notation]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_13)
+[true]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/true.html#tag_20_133
 
-* [2.2 Quoting]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_02)
+* [false - return false value][false]
 
-* [2.3 Token Recognition]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_03)
+[false]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/false.html#tag_20_43
 
-* [2.14. Special Built-In Utilities]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_14)
+* [test - evaluate expression][test]
 
-* [2.8 Exit Status and Errors]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_08)
+[test]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/test.html#tag_20_128
 
-* [exit - cause the shell to exit]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_21)
+* [expr - evaluate arguments as an expression][expr]
 
-* [2.11. Signals and Error Handling]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_11)
+[expr]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/expr.html#tag_20_42
 
-* [trap - trap signals]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#trap)
+* [2.5 Parameters and Variables][2.5]
 
-* [1.6 Built-In Utilities]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap01.html#tag\_17\_06)
+[2.5]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_05
 
-* [2.12 Shell Execution Environment]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_12)
+* [unset - unset values and attributes of variables and functions][unset]
 
-* [dot - execute commands in the current environment]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap02.html#tag\_18\_18)
+[unset]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_29
 
-* [4. Utilities]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap04.html#tag\_20)
+* [readonly - set the readonly attribute for variables][readonly]
 
-* [1.2 Utility Limits]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap01.html#tag\_17\_02)
+[readonly]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_23
 
-* [1.5 Considerations for Utilities in Support of Files of Arbitrary Size]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap01.html#tag\_17\_05)
+* [2.6 Word Expansions][2.6]
 
-* [1.1 Relationship to Other Documents]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap01.html#tag\_17\_01)
+[2.6]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06
 
-* [3. Batch Environment Services (obsolescent)]
-(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3\_chap03.html#tag\_19)
+* [set - set or unset options and positional parameters][set]
+
+[set]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_25
+
+* [shift - shift positional parameters][shift]
+
+[shift]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_26
+
+* [getopts - parse utility options][getopts]
+
+[getopts]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/getopts.html#tag_20_54
+
+* [2.7 Redirection][2.7]
+
+[2.7]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_07
+
+* [read - read a line from standard input][read]
+
+[read]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/read.html#tag_20_109
+
+* [cat - concatenate and print files][cat]
+
+[cat]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/cat.html#tag_20_13
+
+* [2.13. Pattern Matching Notation][2.13]
+
+[2.13]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_13
+
+* [2.2 Quoting][2.2]
+
+[2.2]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_02
+
+* [2.3 Token Recognition][2.3]
+
+[2.3]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_03
+
+* [2.14. Special Built-In Utilities][2.14]
+
+[2.14]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_14
+
+* [2.8 Exit Status and Errors][2.8]
+
+[2.8]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_08
+
+* [exit - cause the shell to exit][exit]
+
+[exit]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_21
+
+* [2.11. Signals and Error Handling][2.11]
+
+[2.11]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_11
+
+* [trap - trap signals][trap]
+
+[trap]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#trap
+
+* [1.6 Built-In Utilities][1.6]
+
+[1.6]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap01.html#tag_17_06
+
+* [2.12 Shell Execution Environment][2.12]
+
+[2.12]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_12
+
+* [dot - execute commands in the current environment][dot]
+
+[dot]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_18
+
+* [4. Utilities][4]
+
+[4]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap04.html#tag_20
+
+* [1.2 Utility Limits][1.2]
+
+[1.2]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap01.html#tag_17_02
+
+* [1.5 Considerations for Utilities in Support of Files of Arbitrary Size][1.5]
+
+[1.5]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap01.html#tag_17_05
+
+* [1.1 Relationship to Other Documents][1.1]
+
+[1.1]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap01.html#tag_17_01
+
+* [3. Batch Environment Services (obsolescent)][3]
+
+[3]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap03.html#tag_19
 
 ## AUTHOR ##
 
